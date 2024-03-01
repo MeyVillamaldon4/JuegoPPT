@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia5-juego</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+    <header>
+        <h1>JUEGO</h1>
+        <H2><span class="pi">PIEDRA</span> - <span class="pp">PAPEL</span> - <span class="tj">TIJERA</span> </H2>
+    </header>
+
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            El primero en llegar a 5 gana.
+        </p>
+
+        <div id="marcador" class="marcador">
+            <p class="nombre nombre-jugador">Jugador</p>
+            <p class="nombre nombre-pc">Computadora</p>
+            <p class="puntos">
+                <span id="puntoJugador">0</span>
+                <span>-</span>
+                <span id="puntoPc">0</span>
+            </p>
+
+        </div>
+
+        <div class="elegir-arma" id="elegir-arma"   >
+            <h2>Elige el arma para el proximo turno</h2>
+            <div class="armas">
+                <button class='arma' id="piedra">
+                    <img class="dibujos" src="img/piedra.png" alt="imgpieda">
+                </button>
+                <button class='arma' id="papel">
+                    <img class="dibujos" src="img/papel.png" alt="imgpapel">
+                </button>
+                <button class='arma' id="tijera">
+                    <img class="dibujos" src="img/tijera.png" alt="imgtijera">
+                </button>
+            </div>
+        </div>
+
+        <div class="mensaje disabled" id="mensaje">
+            <p>
+                Usaste <span class="eleccion" id="eleccion-usuario">papel📋</span><br>
+                y la computadora usó <span class="eleccion" id="eleccion-pc">piedra🪨</span>
+            </p>
+            <p id="gana-punto">¡Ganaste un punto! 🔥</p>
+        </div>
+
+
+        <button class="btn disabled" id="reiniciar" class="btn"> Reiniciar juego</button>
+       
+    </main>
+
+    <script src="juego.js"></script>
+    </div>
+</body>
+
+</html>

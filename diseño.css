@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+ --clr-celeste: #BFD8FE ; 
+ --clr-verde:#9ACE9C;
+ --clr-beige:#DEC89B;
+}
+
+body{
+    background-color: var(--clr-celeste);
+}
+
+h1{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(4, 4, 4);
+color: #ffa43a;
+}
+.pi{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(68, 54, 54);
+color: rgb(81, 174, 255);
+}
+.pp{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(68, 54, 54);
+color: rgb(255, 239, 11);
+
+}
+.tj{ 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(68, 54, 54);
+color:#ff0202;
+}
+
+.dibujos{
+    width: 100px;
+    cursor: pointer;  
+}
+.dibujos:hover{
+   scale: 1.5; 
+}
+header{
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+background-color: var(--clr-beige);
+border-bottom-left-radius: 3rem;
+border-bottom-right-radius: 3rem;
+border: 2px solid black;
+}
+main{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+text-align: center;
+}
+
+.instrucciones{
+    margin-bottom: 2rem;
+}
+
+.marcador{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    position: relative;
+    background-color: var(--clr-verde);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre{
+   position: absolute; 
+background-color: var(--clr-beige);
+line-height: 1;
+padding: 1rem;
+border-radius: 1rem;
+border: 2px solid black;
+}
+
+.marcador .nombre-jugador{
+    right: 85%;
+}
+.marcador .nombre-pc{
+    left: 85%;
+}
+
+.marcador .puntos{
+    font-size: 1.6rem;
+}
+.elegir-arma{
+    margin-bottom: 2rem;
+}
+
+.elegir-arma h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+#eleccion{
+    background-color:var(--clr-beige);
+}
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-beige);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.disabled {
+    display: none;
+}
